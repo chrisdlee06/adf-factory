@@ -28,12 +28,3 @@ Dynamic ingestion: A single parameterized pipeline handles all 10 tables — no 
 Unity Catalog integration: ADLS access uses an Access Connector with managed identity and External Locations (credential passthrough was deprecated on Databricks Runtime 17.3+)
 Delta Lake: Silver and Gold layers use Delta format for ACID transactions and version tracking
 Security: All credentials stored in Key Vault; ADF authenticates via system-assigned managed identity; RBAC enforced across all resources
-
-Project Structure
-├── notebooks/
-│   ├── bronze_to_silver.py     # Level 1 transformation
-│   └── silver_to_gold.py       # Level 2 transformation
-├── sql/
-│   └── get_schema.sql          # Dynamic table discovery query
-├── pipeline/                   # ADF pipeline definitions (JSON)
-└── README.md
