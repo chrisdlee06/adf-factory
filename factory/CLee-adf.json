@@ -1,0 +1,9 @@
+{
+	"name": "CLee-adf",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "03ec99e5-4344-44ee-9803-e91721ac000a",
+		"tenantId": "f947665a-e85c-43ab-8198-2b8c8cbeb643"
+	}
+}
